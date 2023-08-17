@@ -9,9 +9,9 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(14, 13, 36); 
-    margin:0px ;
     width: 100%;
     margin-top: -20px;
+    height:100px;
 
 }    
 .logo{
@@ -21,24 +21,54 @@ body{
    
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;    
-}
-.menu li {
-    margin: 20px 0; 
-}
-
 .menu li a {
+    
     text-decoration: none;
     color: white;
-    padding: 15px;
-    
+    padding: 10px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* ___________________ */
+ .menu {
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    background-color: rgb(14, 13, 36);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+   
+} 
+
+.menu.active {
+    display: flex;
+}
+
+.menu li {
+    padding: 15px;
+    margin-top: -50px;
+   
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+
+/* _______________________ */
 .content {
     display: flex;
     flex-direction: column;
@@ -208,13 +238,14 @@ input[type="submit"] {
     text-decoration: none; 
     font-size: 30px;
     color: rgb(14, 13, 36);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     
 }
 
   
 
 /*--->MediaQuery*/
+
 @media screen and (min-width: 768px){
     input[type="submit"]:hover {
         background-color: #09417c;
@@ -235,7 +266,7 @@ input[type="submit"] {
 }
 .contact-links  a:active{
     text-decoration: none; 
-    color:#09417c
+    color:#09417c;
 
 
 }
@@ -248,19 +279,65 @@ input[type="submit"] {
     
 .button input:active{
     text-decoration: none; 
-    color:#09417c
+    color:#09417c;
 }
 .contact-links a:hover {
     color: ##09417c; 
     transform: scale(1.4); 
 }
     
+/* MENU */
+.menu {
+    display: flex 
 }
-@media screen and (max-width: 768px){
+
+.menu-icon {
+    display: none; /* Nascondi l'icona dell'hamburger */
+}
+
+.menu.active {
+    display: flex; /* Mostra sempre il menu */
+}
+
+
+
 
 
 
 }
+
+@media (max-width: 768px) {
+    .menu{
+        display: none;
+      
+    }
+    .menu-icon {
+        display: block;
+        color: white;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: rgb(14, 13, 36);
+        z-index: 1;
+        align-items: flex-start;
+       
+    }
+
+    .menu li {
+        text-align: left;
+        border-bottom: none;
+        padding: 10px;
+        margin: 10px;
+        
+    }
+}
+
+
 
 /* --->Footer */
 .footer {

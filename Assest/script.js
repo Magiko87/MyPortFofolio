@@ -1,5 +1,24 @@
 //====>HOME
 
+//--->Menù
+
+const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
+
+
+
+
+
+//_________________
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const changeableElement = document.querySelector('.changeable');
     const phrases = [
