@@ -63,8 +63,15 @@ body{
 }
 
 .menu-icon {
-    display: none;
+    display: block;
+    color: white;
     cursor: pointer;
+}
+.menu-icon.open {
+    display: none;
+}
+.menu-icon.close {
+    display: none;
 }
 
 
@@ -75,6 +82,7 @@ body{
     align-items: center;
     text-align: center;
 }
+
 .photo {
     border-radius: 100%;
     width: 150px; 
@@ -245,7 +253,7 @@ input[type="submit"] {
   
 
 /*--->MediaQuery*/
-
+/* DESKTOP */
 @media screen and (min-width: 768px){
     input[type="submit"]:hover {
         background-color: #09417c;
@@ -305,16 +313,13 @@ input[type="submit"] {
 
 
 }
-
+/* MOBILE */
 @media (max-width: 768px) {
     .menu{
         display: none;
       
     }
-    .menu-icon {
-        display: block;
-        color: white;
-    }
+   
 
     .menu.active {
         display: flex;
@@ -334,6 +339,17 @@ input[type="submit"] {
         padding: 10px;
         margin: 10px;
         
+    }
+    .menu.active ~ .menu-icon.open {
+        display: none;
+    }
+
+    .menu.active .menu-icon.open {
+        display: block;
+    }
+
+    .menu.active .menu-icon.close {
+        display: none;
     }
 }
 
