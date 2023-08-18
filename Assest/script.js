@@ -2,14 +2,15 @@
 
 //--->Menù
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const menu = document.getElementById('menu');
 
-const menuIcon = document.querySelector('.menu-icon');
-const menu = document.querySelector('.menu');
-
-menuIcon.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    menuIcon.classList.toggle('open');
+    menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
 });
+
 
 
 
