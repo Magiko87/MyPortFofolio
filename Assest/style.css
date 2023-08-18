@@ -84,9 +84,9 @@ body{
 
  .title{
     color: rgb(25, 93, 152);
-    font-size:40px;
-    font-family
+    font-size:50px;
     display:flex;
+    margin-bottom:50px;
     justify-content: center;
     margin-top:150px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
@@ -102,7 +102,8 @@ body{
 }
 .aboutTitle{
   color: rgb(25, 93, 152);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin-bottom:40px;
 }
 .description{
     font-family:  'Arial Narrow Bold', sans-serif;
@@ -112,13 +113,30 @@ body{
 .skill{
     padding: 100px;
     color: rgb(25, 93, 152);
+    text-align: center;
     
+}
+.hard-skill{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) ;
 }
 
 .imgSkill img {
     padding-top: 50px;
     max-width: 100px; 
     margin: 5px; 
+    
+}
+.btn-cv{
+    padding: 10px 20px;
+    background-color: #09417c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 120px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /*---> Progetti */
@@ -129,27 +147,32 @@ body{
     flex-direction: column;
     padding: 20px;
     color: rgb(25, 93, 152);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
    
    
 }
 .card .btn-primary {
-    
-    background-color:rgb(14, 13, 36);
+    padding: 10px 20px;
+    background-color: #09417c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
     border: none;
+    width: 90px;
 }
-.card .btn-primary:hover{
-    background-color:rgb(14, 13, 36);
-}
+
 
 
     
 
 
 /*---> Contatti */
+.tit-cont{
+    margin-bottom:80px;
 
+}
 .contattiTitle{
     display: flex;
     justify-content: center;
@@ -161,8 +184,14 @@ body{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
    
 }
+.project{
+    padding-bottom:80px;
+}
+
 .contact-form {
-    max-width: 400px;
+    margin-top:50px;
+    max-width: 350px;
+    height: 620px;
     margin: 0 auto;
     padding: 30px;
     border: 1px solid #ccc;
@@ -180,17 +209,20 @@ body{
     flex-wrap: wrap;
     gap: 10px;
     flex-direction: column;
+    height: 300px;
 }
 
 .input-box {
     flex: 1;
     display: flex;
     flex-direction: column;
+    
 }
 
 .details {
     font-weight: bold;
     margin-bottom: 5px;
+    height: 40px;
 }
 
 input[type="text"],
@@ -271,19 +303,31 @@ input[type="submit"] {
 
 
 }
-.button input:hover{
-    text-decoration: none; 
-    
+.card .btn-primary:hover{
+    text-decoration: none;  
     background-color: #b3d2f3;
+    color: #09417c;
+}
+.card .btn-primary:active{
+    text-decoration: none; 
+    color:white;
+    background-color: #0061c9;
+}
+  
+.button input:hover{
+    text-decoration: none;  
+    background-color: #b3d2f3;
+    color: #09417c;
 
 }
     
 .button input:active{
     text-decoration: none; 
-    color:#09417c;
+    color:white;
+    background-color: #0061c9;
 }
 .contact-links a:hover {
-    color: ##09417c; 
+    color: #09417c; 
     transform: scale(1.4); 
 }
     
@@ -295,7 +339,15 @@ input[type="submit"] {
 .menu-icon {
     display: none; /* Nascondi l'icona dell'hamburger */
 }
+.btn-cv:hover{
+    text-decoration: none;  
+    background-color: #b3d2f3;
+}
+.btn-cv:active{
+    text-decoration: none; 
+    color:#09417c;
 
+}
 
 
 
@@ -305,6 +357,12 @@ input[type="submit"] {
 }
 /* MOBILE */
 @media (max-width: 768px) {
+   
+    .logo {
+        width: 20%; /* Modifica secondo necessità */
+        margin-top: 20px;
+    }
+   
     .menu {
         display: none;
     }
@@ -326,6 +384,7 @@ input[type="submit"] {
         padding: 10px;
         margin: 10px;
     }
+    
    
 }
 

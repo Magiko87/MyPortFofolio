@@ -1,15 +1,23 @@
 //====>HOME
 
 //--->Menù
-
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const menu = document.getElementById('menu');
+    const menuItems = document.querySelectorAll('.menu li'); // Ottieni tutti gli elementi della lista
 
     menuIcon.addEventListener('click', () => {
         menu.classList.toggle('active');
     });
+
+    // Aggiungi un gestore di eventi a ciascun elemento della lista per chiudere il menu quando viene cliccato
+    menuItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+    });
 });
+
 
 
 
