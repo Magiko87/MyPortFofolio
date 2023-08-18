@@ -23,226 +23,246 @@
     <title>PortFolio</title>
 </head>
 <body>
-    <!-- NavBar -->
-    <nav class="navbar">
-        <img class="logo" src="./Assest/img/PorLogo.jpeg" alt="logo">
-        <div class="menu-icon">
-            <i class="hamb bi bi-list"></i>
-            <i class="bi bi-x-lg"></i>
+    <div class="main-container">
+        <nav class="navbar">
+            <img class="logo" src="./Assest/img/PorLogo.jpeg" alt="logo">
+            <div class="menu-icon">
+                <i class="hamb bi bi-list"></i>
+                <!-- <i class="bi bi-x-lg"></i> -->
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#progetti-section">Progetti</a></li>
+                <li><a href="#contatti-section">Contatti</a></li>
+            </ul>
+        </nav>
+         <!-- Home -->
+        <div class="content">
+    
+                 <img class="photo" src="./Assest/img/me-r copia.jpeg" alt="Daniele Camodeca">
+            <h1 class="title" id="typewriter">
+                I'm Daniele, <span class="changeable"> </span>
+                
+            </h1>
         </div>
-        <ul class="menu" id="menu">
-            <li><a href="#home-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#progetti-section">Progetti</a></li>
-            <li><a href="#contatti-section">Contatti</a></li>
-        </ul>
-    </nav>
-     <!-- Home -->
-    <div class="content">
-
-             <img class="photo" src="./Assest/img/me-r copia.jpeg" alt="Daniele Camodeca">
-        <h1 class="title" id="typewriter">
-            I'm Daniele, <span class="changeable"> </span>
-            
-        </h1>
-    </div>
-    <!-- About -->
-    <div class="about" id="about-section">
+        <!-- About -->
         <div class="about" id="about-section">
-            <h3 class="aboutTitle">ABOUT</h3>
-            <h3 class="description">Diplomato in Informatica e Telecomunicazioni,
-                sto attualmente continuando gli studi con 
-                start2impact University,al fine di ottenere il Master in Front End Developer.</h3>
-            <div class="skill">
-                <h3 class="hard-skill">Hard Skill:</h3>
-                <div class="imgSkill">
-                    <img src="./Assest/img/Skill/html-removebg-preview copia 2.png" alt="html">
-                    <img src="./Assest/img/Skill/CSS copia 2.png" alt="css">
-                    <img src="./Assest/img/Skill/JvaScript copia 2.png" alt="JavaScript">
-                    <img src="./Assest/img/Skill/bootstrap copia 2.png" alt="bootstrap">
-                    <img src="./Assest/img/Skill/TailWind copia 2.png" alt="TailWind">
-                    <img src="./Assest/img/Skill/GitHub copia 2.png" alt="GitHub">
-                    <img src="./Assest/img/Skill/webpack copia 2.png" alt="webpack">
-                    <img src="./Assest/img/Skill/React copia 2.png" alt="React">
-                    <img src="./Assest/img/Skill/wordpress copia 2.png" alt="wordpress">   
-                    <img src="./Assest/img/Skill/FontAwesome copia 2.png" alt="FontAwesome">
-                    <img src="./Assest/img/Skill/node copia 2.png" alt="node">
-                   <img src="./Assest/img/Skill/Vercel copia 2.png" alt="Vercel">
-         </div>
-         <div class="d-grid gap-2 col-6 mx-auto">
-            <a  href="./Assest/img/Curriculum_DC-compresso copia.pdf" class=" btn-cv" target="_blank" download>Download CV</a>
-          </div>
-            
-    </div>
-
-    <!-- Progetti -->
-    <div class="progettiTitle" id="progetti-section">
-        <h3 class="mt-5 mb-4 text-center project">PROGETTI</h3>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class=" card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/Count-im.png" class="card-img-top card-img-custom" alt="AppCount">
-                        <div class="card-body">
-                            <h5 class="card-title">Counter</h5>
-                            <a href="https://magiko87.github.io/Count/" class="btn btn-primary">Apri</a>
+            <div class="about" id="about-section">
+                <h3 class="aboutTitle">ABOUT</h3>
+                <div class="description">
+                   <h3>Diplomato in Informatica e Telecomunicazioni,
+                    sto attualmente continuando gli studi con 
+                    start2impact University,al fine di ottenere il Master in Front End Developer.</h3>
+                </div>
+                <div class="skill">
+                    <h3 class="hard-skill">Hard Skill:</h3>
+                    <div class="imgSkill">
+                        <img src="./Assest/img/Skill/html-removebg-preview copia 2.png" alt="html">
+                        <img src="./Assest/img/Skill/CSS copia 2.png" alt="css">
+                        <img src="./Assest/img/Skill/JvaScript copia 2.png" alt="JavaScript">
+                        <img src="./Assest/img/Skill/bootstrap copia 2.png" alt="bootstrap">
+                        <img src="./Assest/img/Skill/TailWind copia 2.png" alt="TailWind">
+                        <img src="./Assest/img/Skill/GitHub copia 2.png" alt="GitHub">
+                        <img src="./Assest/img/Skill/webpack copia 2.png" alt="webpack">
+                        <img src="./Assest/img/Skill/React copia 2.png" alt="React">
+                        <img src="./Assest/img/Skill/wordpress copia 2.png" alt="wordpress">   
+                        <img src="./Assest/img/Skill/FontAwesome copia 2.png" alt="FontAwesome">
+                        <img src="./Assest/img/Skill/node copia 2.png" alt="node">
+                       <img src="./Assest/img/Skill/Vercel copia 2.png" alt="Vercel">
+             </div>
+             <div class="d-grid gap-2 col-6 mx-auto">
+                <a  href="./Assest/img/Curriculum_DC-compresso copia.pdf" class=" btn-cv" target="_blank" download>Download CV</a>
+              </div>
+                
+        </div>
+    
+        <!-- Progetti -->
+        <div class="progettiTitle" id="progetti-section">
+            <h3 class="mt-5 mb-4 text-center project">PROGETTI</h3>
+            <div class="container-card">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class=" card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/Count-im.png" class="card-img-top card-img-custom" alt="AppCount">
+                            <div class="card-body">
+                                <h5 class="card-title">Counter</h5>
+                                <a href="https://magiko87.github.io/Count/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class=" card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class=" card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4 col-12">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
-                    <div class="card animate__flipInX fade-in-card custom-shadow text-center">
-                        <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
-                        <div class="card-body">
-                            <h5 class="card-title">Meteo App</h5>
-                            <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                        <div class="card animate__flipInX fade-in-card custom-shadow text-center">
+                            <img src="./Assest/img/cover.png" class="card-img-top card-img-custom" alt="MeteoApp">
+                            <div class="card-body">
+                                <h5 class="card-title">Meteo App</h5>
+                                <a href="https://magiko87.github.io/MeteoApp/" class="btn btn-primary">Apri</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    
-    <!-- Contatti -->
-    <div class="contattiTitle" id="contatti-section">
-        <h3 class="tit-cont">CONTATTI</h3>
-        <div class="container-form custom-shadow">
-            <form action="https://formspree.io/f/mbjepqdz" method="POST" class="contact-form ">
-                <div class="user-details">
-                    <div class="input-box">
-                        <label class="details">Nome *</label>
-                        <input name="nome" type="text" placeholder="Inserisci il nome" required>
+        
+        
+        <!-- Contatti -->
+        <div class="contattiTitle" id="contatti-section">
+            <h3 class="tit-cont">CONTATTI</h3>
+            <div class="container-form custom-shadow">
+                <form action="https://formspree.io/f/mbjepqdz" method="POST" class="contact-form ">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label class="details">Nome *</label>
+                            <input name="nome" type="text" placeholder="Inserisci il nome" required>
+                        </div>
+                        <div class="input-box">
+                            <label class="details">Cognome *</label>
+                            <input name="cognome" type="text" placeholder="Inserisci il cognome" required>
+                        </div>
+                        <div class="input-box">
+                            <label class="details">E-mail *</label>
+                            <input name="email" type="email" placeholder="Inserisci l'email" required>
+                        </div>
                     </div>
-                    <div class="input-box">
-                        <label class="details">Cognome *</label>
-                        <input name="cognome" type="text" placeholder="Inserisci il cognome" required>
+                    <div class="form-textarea">
+                        <label class="details">Messaggio *</label>
+                        <textarea name="message" cols="30" rows="6" placeholder="Scrivi..." required></textarea>
                     </div>
-                    <div class="input-box">
-                        <label class="details">E-mail *</label>
-                        <input name="email" type="email" placeholder="Inserisci l'email" required>
+                    <div class="button">
+                        <input type="submit" value="Invia">
                     </div>
-                </div>
-                <div class="form-textarea">
-                    <label class="details">Messaggio *</label>
-                    <textarea name="message" cols="30" rows="6" placeholder="Scrivi..." required></textarea>
-                </div>
-                <div class="button">
-                    <input type="submit" value="Invia">
-                </div>
-            </form>
-            <ul class="contact-links">
-                <li>
-                    
-                    <a class="linkedin" href="https://www.linkedin.com/in/daniele-camodeca-a80aaa244/">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    
-                    <a class="facebook" href="https://www.facebook.com/daniele.camodeca">
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                   
-                    <a class="Instagram" href="https://instagram.com/daniele_8714?igshid=YmMyMTA2M2Y">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                   
-                    <a class="github" href="https://github.com/Magiko87/Portfolio.git">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
+                </form>
+                <ul class="contact-links">
+                    <li>
+                        
+                        <a class="linkedin" href="https://www.linkedin.com/in/daniele-camodeca-a80aaa244/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        
+                        <a class="facebook" href="https://www.facebook.com/daniele.camodeca">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                       
+                        <a class="Instagram" href="https://instagram.com/daniele_8714?igshid=YmMyMTA2M2Y">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                       
+                        <a class="github" href="https://github.com/Magiko87/Portfolio.git">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                
         </div>
+        
+        
+                
+                
             
+        
+    
+        <div class="footer">
+            <footer>
+                ®Copyright-Daniele Camodeca
+            </footer>
+        </div>
+    
+
+        
+
+
+
+
+
+
     </div>
-    
-    
+  
             
             
         
     
 
-    <div class="footer">
-        <footer>
-            ®Copyright-Daniele Camodeca
-        </footer>
-    </div>
+    
+
     <script type="text/javascript" src="./Assest/script.js"></script>
 </body>
 </html>

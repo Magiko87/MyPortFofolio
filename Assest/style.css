@@ -1,10 +1,14 @@
-body{
+html, body {
     height: 100vh;
-    margin:0;
 }
 
+
 /*---> Home */
-.navbar {
+.main-container{
+    height: 100vh;
+    
+}
+ .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +17,7 @@ body{
     margin-top: -20px;
     height:100px;
 
-}    
+}   
 .logo{
     width: 10%;
     display: flex;
@@ -71,15 +75,17 @@ body{
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;border: #09417c sol;
+    align-items: center;
+    
     
 }
 .photo {
-    width: 200px; 
-    height: 200px;
+    width: 150px; 
+    height: 150px;
     margin-top: 100px;
-    border:solid 3px ;
+    border:solid 3px rgb(14, 13, 36);
     border-radius: 100%;
+
 }
 
  .title{
@@ -98,18 +104,22 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
 }
 .aboutTitle{
   color: rgb(25, 93, 152);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   margin-bottom:40px;
 }
-.description{
-    font-family:  'Arial Narrow Bold', sans-serif;
-    color: rgb(25, 93, 152);
-    padding: 40px;
-}
+    .description {
+        font-family: 'Arial Narrow Bold', sans-serif;
+        color: rgb(25, 93, 152);
+        padding: 20px;
+        max-width: 100%; /* Limita la larghezza massima */
+        margin: 0 auto; /* Centra l'elemento */
+        box-sizing: border-box; /* Evita che il padding e il bordo aumentino la larghezza */
+    }
+    
+
 .skill{
     padding: 100px;
     color: rgb(25, 93, 152);
@@ -162,6 +172,15 @@ body{
     border: none;
     width: 90px;
 }
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+
+
 
 
 
@@ -169,7 +188,7 @@ body{
 
 
 /*---> Contatti */
-.tit-cont{
+ .tit-cont{
     margin-bottom:80px;
 
 }
@@ -279,7 +298,7 @@ input[type="submit"] {
 
 /*--->MediaQuery*/
 /* DESKTOP */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
     input[type="submit"]:hover {
         background-color: #09417c;
     }
@@ -337,7 +356,7 @@ input[type="submit"] {
 }
 
 .menu-icon {
-    display: none; /* Nascondi l'icona dell'hamburger */
+    display: none; /
 }
 .btn-cv:hover{
     text-decoration: none;  
@@ -357,9 +376,35 @@ input[type="submit"] {
 }
 /* MOBILE */
 @media (max-width: 768px) {
-   
+    .container-card{
+        display: flex;
+      
+        width: 350px;
+    }
+    .card{
+        width: 350px;
+        margin: 30px;
+    }
+.title{
+    font-size: 20px;
+}
+.description{
+    padding: 100px;
+
+}
+.description h3 {
+    margin-left: 30px;
+    font-size: 20px; /* Riduci la dimensione del testo */
+}
+
+    .main-container{
+        overflow-y: auto;
+        height: 100%;
+    
+    }
+
     .logo {
-        width: 20%; /* Modifica secondo necessità */
+       
         margin-top: 20px;
     }
    
@@ -383,6 +428,9 @@ input[type="submit"] {
         border-bottom: none;
         padding: 10px;
         margin: 10px;
+    }
+    .menu-icon{
+        padding: 20px;
     }
     
    
