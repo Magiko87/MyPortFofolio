@@ -178,14 +178,14 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 800px;
+  
+}
+
+.card-img-top{
+    height:200px;
 }
 
 
-
-
-
-
-    
 
 
 /*---> Contatti */
@@ -387,7 +387,7 @@ input[type="submit"] {
         margin: 30px;
     }
 .title{
-    font-size: 20px;
+    font-size: 25px;
 }
 .description{
     padding: 100px;
@@ -435,7 +435,11 @@ input[type="submit"] {
     .menu-icon{
         padding: 20px;
     }
+    .card-img-top{
+        height: 300px;
+    }
     
+
    
 }
 
