@@ -19,52 +19,77 @@ html, body {
     height:100px;
 
 }   
-.logo{
-    width: 10%;
+.logo {
+    width: 9%;
     display: flex;
+    align-items: center; /* Centra verticalmente il logo */
     margin-top: 15px;
-   
 }
-.menu li a {
-    
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+/* Stile per il menu */
+.menu-icon {
+    display: block;
 }
-/* ___________________ */
- .menu {
-    list-style: none;
-    display: flex; 
-    justify-content: flex-end;
-    flex-direction: row;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    font-weight: 600;
     background-color: rgb(14, 13, 36);
+    width: 100%;
+    height: 100px;
+    padding: 0 20px; /* Aggiungi spaziatura interna */
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     position: absolute;
     top: 100%;
+    left: 0; /* Allinea il menu a sinistra */
     width: 100%;
+    background-color: rgb(14, 13, 36);
     z-index: 1;
-   
-} 
+    flex-direction: row; /* Disponi le voci del menu in orizzontale */
+    justify-content: space-around; /* Distribuisci uniformemente le voci del menu */
+    align-items: center; /* Centra verticalmente le voci del menu */
+}
 
 .menu.active {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(14, 13, 36);
+    z-index: 1;
+    align-items: flex-start;
+
+    
+    
 }
 
 .menu li {
-    padding: 15px;
-    margin-top: -50px;
+    margin: 30px;
+    margin-left: 10px; /* Rimuovi i margini superiori e inferiori */
+    text-align: left; /* Allinea il testo al centro */
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Aggiungi spaziatura interna orizzontale */
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
    
 }
 
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+/* ___________________ */
+ 
 .hamb{
     color: white;
     cursor: pointer;
@@ -355,11 +380,19 @@ input[type="submit"] {
     
 /* MENU */
 .menu {
-    display: flex 
+   
+    display: flex ;
+    justify-content: flex-end; 
+
+
+}
+.menu li {
+    margin-top: -50px;
+    margin-right: 5px; 
 }
 
 .menu-icon {
-    display: none; /
+    display: none; 
 }
 .btn-cv:hover{
     text-decoration: none;  
@@ -412,31 +445,11 @@ input[type="submit"] {
        
         margin-top: 20px;
     }
+   .menu{
    
-    .menu {
-        display: none;
-    }
-
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        background-color: rgb(14, 13, 36);
-        z-index: 1;
-        align-items: flex-start;
-    }
-
-    .menu li {
-        text-align: left;
-        border-bottom: none;
-        padding: 10px;
-        margin: 10px;
-    }
-    .menu-icon{
-        padding: 20px;
-    }
+    background-color: rgba(14, 13, 36,0.8);
+   }
+    
     .card-img-top{
         height: 300px;
     }
