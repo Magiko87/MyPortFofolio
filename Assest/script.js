@@ -23,13 +23,26 @@ $(document).ready(function() {
         }
     });
 
-    // Chiudi il menu quando un elemento del menu viene cliccato
-    $('.menu li a').click(function() {
-        menu.slideUp('slow', function() {
-            menu.removeClass('active');
-            menuIconOpen.show();
-            menuIconClose.hide();
-        });
+    $('.menu li a').click(function(event) {
+        event.preventDefault(); // Previeni il comportamento predefinito del collegamento
+        const targetId = $(this).attr('href'); // Ottieni l'ID del target dall'attributo href
+    
+        // Chiudi il menu se è aperto
+        if (menu.hasClass('active')) {
+            menu.slideUp(500, function() {
+                menu.removeClass('active');
+                menuIconOpen.show();
+                menuIconClose.hide();
+                
+                // Ora, scorrere verso l'elemento di destinazione
+                const targetOffset = $(targetId).offset().top;
+                $('html, body').animate({ scrollTop: targetOffset }, 'slow');
+            });
+        } else {
+            // Se il menu è già chiuso, scorrere direttamente verso l'elemento di destinazione
+            const targetOffset = $(targetId).offset().top;
+            $('html, body').animate({ scrollTop: targetOffset }, 'slow');
+        }
     });
 });
 
