@@ -23,15 +23,16 @@ html, body {
     width: 10%;
     display: flex;
     margin-top: 15px;
+    padding: 5px;
    
 }
-.menu li a {
-    
+.menu li a {  
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     padding: 10px;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600px;
+    font-size:18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 /* ___________________ */
  .menu {
@@ -51,6 +52,7 @@ html, body {
 
 .menu.active {
     display: flex;
+    
 }
 
 .menu li {
@@ -60,6 +62,7 @@ html, body {
 }
 
 .menu a {
+   
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -91,12 +94,11 @@ html, body {
 
  .title{
     color: rgb(25, 93, 152);
-    font-size:50px;
     display:flex;
     margin-bottom:50px;
     justify-content: center;
     margin-top:150px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
 }
 /*---> About */
@@ -110,16 +112,20 @@ html, body {
   color: rgb(25, 93, 152);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   margin-bottom:40px;
+  
 }
     .description {
-        font-family: 'Arial Narrow Bold', sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(25, 93, 152);
         padding: 20px;
-        max-width: 100%; /* Limita la larghezza massima */
-        margin: 0 auto; /* Centra l'elemento */
-        box-sizing: border-box; /* Evita che il padding e il bordo aumentino la larghezza */
+        max-width: 100%;
+        margin: 0 auto; 
+        box-sizing: border-box; 
+
     }
-    
+    .description h3{
+        font-size: 20px;
+    }
 
 .skill{
     padding: 100px;
@@ -142,7 +148,7 @@ html, body {
     background-color: #09417c;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     margin-top: 120px;
     text-decoration: none;
@@ -167,7 +173,7 @@ html, body {
     padding: 10px 20px;
     background-color: #09417c;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
@@ -215,13 +221,15 @@ html, body {
     margin: 0 auto;
     padding: 30px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     background-color: rgb(14, 13, 36); 
     color: white;
     
 }
 .custom-shadow{
-  box-shadow: 0px 5px 20px rgba(14, 13, 36, 0.7); ;
+  box-shadow: 0px 5px 20px rgba(14, 13, 36, 0.7); 
+  border-radius: 50px;
 }
 
 .user-details {
@@ -353,12 +361,13 @@ input[type="submit"] {
     
 /* MENU */
 .menu {
-    display: flex 
+    display: flex;
 }
 
 .menu-icon {
-    display: none; /
+    display: none; 
 }
+
 .btn-cv:hover{
     text-decoration: none;  
     background-color: #b3d2f3;
@@ -390,12 +399,12 @@ input[type="submit"] {
     font-size: 25px;
 }
 .description{
-    padding: 100px;
+    padding: 50px;
 
 }
 .description h3 {
     margin-left: 30px;
-    font-size: 20px; /* Riduci la dimensione del testo */
+    font-size: 20px; 
 }
 
     .main-container{
@@ -413,15 +422,16 @@ input[type="submit"] {
    
     .menu {
         display: none;
+        
     }
 
     .menu.active {
+        background-color: rgba(14, 13, 36,0.9); 
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 100%;
         width: 100%;
-        background-color: rgb(14, 13, 36);
         z-index: 1;
         align-items: flex-start;
     }
