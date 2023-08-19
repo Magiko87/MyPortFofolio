@@ -1,31 +1,37 @@
 //====>HOME
 
 //--->Menù
-document.addEventListener('DOMContentLoaded', () => {
-    const menuIcon = document.querySelector('.menu-icon');
-    const menu = document.getElementById('menu');
-    const menuItems = document.querySelectorAll('.menu li'); // Ottieni tutti gli elementi della lista
-    const menuIconOpen = document.getElementById('open-menu');
-    const menuIconClose = document.getElementById('close-menu');
+$(document).ready(function() {
+    const menuIcon = $('.menu-icon');
+    const menu = $('#menu');
+    const menuIconOpen = $('#open-menu');
+    const menuIconClose = $('#close-menu');
 
-    // Mostra o nascondi il menu quando l'icona dell'hamburger viene cliccata
-    menuIcon.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        menuIconOpen.style.display = menu.classList.contains('active') ? 'none' : 'block';
-        menuIconClose.style.display = menu.classList.contains('active') ? 'block' : 'none';
+    menuIcon.click(function() {
+        if (menu.hasClass('active')) {
+            menu.slideUp(500, function() {
+                menu.removeClass('active');
+                menuIconOpen.show();
+                menuIconClose.hide();
+            });
+        } else {
+            menu.slideDown(500, function() {
+                menu.addClass('active');
+                menuIconOpen.hide();
+                menuIconClose.show();
+            });
+        }
     });
 
     // Chiudi il menu quando un elemento del menu viene cliccato
-    menuItems.forEach((item) => {
-        item.addEventListener('click', () => {
-            menu.classList.remove('active');
-            menuIconOpen.style.display = 'block';
-            menuIconClose.style.display = 'none';
+    $('.menu li a').click(function() {
+        menu.slideUp('slow', function() {
+            menu.removeClass('active');
+            menuIconOpen.show();
+            menuIconClose.hide();
         });
     });
 });
-
-
 
 
 
