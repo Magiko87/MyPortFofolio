@@ -20,7 +20,7 @@ html, body {
 
 }   
 .logo{
-    width: 10%;
+    width: 100px;
     display: flex;
     margin-top: 15px;
     padding: 5px;
@@ -109,7 +109,10 @@ html, body {
     display:flex;
     margin-bottom:250px;
     justify-content: center;
-    margin-top:150px;
+    margin-top:140px;
+    padding: 20px;
+    white-space: nowrap;
+    font-size: 23px; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
 }
@@ -130,7 +133,6 @@ html, body {
     .description {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(25, 93, 152);
-        padding: 20px;
         max-width: 100%;
         margin: 0 auto; 
         box-sizing: border-box; 
@@ -138,10 +140,12 @@ html, body {
     }
     .description h3{
         font-size: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
 
 .skill{
-    padding: 10px;
+    padding: 100px;
     color: rgb(25, 93, 152);
     text-align: center;
     
@@ -175,7 +179,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding-top: 150px;
     color: rgb(25, 93, 152);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     
@@ -196,6 +200,7 @@ html, body {
     width: 90px;
 }
 .container-card{
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -347,6 +352,9 @@ input[type="submit"] {
 
 
 }
+.container-card{
+    margin-top: 80px;
+}
 .card .btn-primary:hover{
     text-decoration: none;  
     background-color: #b3d2f3;
@@ -394,20 +402,30 @@ input[type="submit"] {
 
 }
 
-.skill{
-    padding: 100px;
-    color: rgb(25, 93, 152);
-    text-align: center;
-    
-}
+
 .description {
   
    margin-top: -50px;
-    padding: 100px;
+    padding-top: 100px;
    
 
 }
 
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(25, 93, 152);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
+   
+   
+}
+.title{
+    font-size: 60px;
+}
 
 
 }
@@ -422,9 +440,7 @@ input[type="submit"] {
         width: 350px;
         margin: 30px;
     }
-.title{
-    font-size: 30px;
-}
+
 .description{
     padding: 10px;
 

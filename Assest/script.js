@@ -82,6 +82,70 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+//====>ABOUT PROJECT CONTACT ANIMATE
+// Aggiungi questo script JavaScript
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutTitle = document.querySelector('.aboutTitle');
+    const projAnimat = document.querySelector('.proj-animat');
+    const titCont = document.querySelector('.tit-cont');
+
+    const observerOptions = {
+        root: null,
+        threshold: 0.3
+    };
+
+    const animateElement = (element, animationClass) => {
+        element.classList.add('animate__animated', animationClass);
+        element.style.visibility = 'visible';
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target === aboutTitle) {
+                    animateElement(aboutTitle, 'animate__flip');
+                } else if (entry.target === projAnimat) {
+                    animateElement(projAnimat, 'animate__flip');
+                } else if (entry.target === titCont) {
+                    animateElement(titCont, 'animate__flip');
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    observer.observe(aboutTitle);
+    observer.observe(projAnimat);
+    observer.observe(titCont);
+});
+
+
+//====>HARD SKILL
+document.addEventListener("DOMContentLoaded", function () {
+    const hardSkill = document.querySelector('.hard-skill');
+
+    const observerOptions = {
+        root: null,
+        threshold: 0.3
+    };
+
+    const animateElement = (element, animationClass) => {
+        element.classList.add('animate__animated', animationClass);
+        element.style.visibility = 'visible';
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateElement(hardSkill, 'animate__zoomInDown');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    observer.observe(hardSkill);
+});
+
 //====>PROGETTI
 document.addEventListener("DOMContentLoaded", function () {
     const cardsToAnimate = document.querySelectorAll('.animate__flipInX');
