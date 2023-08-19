@@ -20,51 +20,49 @@ html, body {
 
 }   
 .logo{
-    width: 10%;
+    width: 9%;
     display: flex;
-    margin-top: 15px;
+    margin-top: -1px;
    
 }
+.menu-icon {
+    display: block; 
+}
+ 
+ .menu {
+        display: none;
+        list-style: none;
+        padding-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .menu.active {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: rgb(14, 13, 36);
+        z-index: 1;
+        align-items: flex-start;
+    }
 .menu li a {
-    
     text-decoration: none;
     color: white;
     padding: 10px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-/* ___________________ */
- .menu {
-    list-style: none;
-    display: flex; 
-    justify-content: flex-end;
-    flex-direction: row;
-    align-items: center;
-    font-weight: 600;
-    background-color: rgb(14, 13, 36);
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    z-index: 1;
-   
 } 
-
-.menu.active {
-    display: flex;
-}
-
 .menu li {
-    padding: 15px;
-    margin-top: -50px;
-   
+    padding: 10px;
+    margin-top: 10;  
+    text-align: left; /* Allinea il testo a sinistra */
 }
 
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
+/* ___________________ */
+ 
 .hamb{
     color: white;
     cursor: pointer;
@@ -142,7 +140,7 @@ html, body {
     background-color: #09417c;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     margin-top: 120px;
     text-decoration: none;
@@ -167,7 +165,7 @@ html, body {
     padding: 10px 20px;
     background-color: #09417c;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
@@ -218,10 +216,13 @@ html, body {
     border-radius: 5px;
     background-color: rgb(14, 13, 36); 
     color: white;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
     
 }
 .custom-shadow{
-  box-shadow: 0px 5px 20px rgba(14, 13, 36, 0.7); ;
+  box-shadow: 0px 5px 20px rgba(14, 13, 36, 0.7); 
+  border-radius: 35px;
 }
 
 .user-details {
@@ -256,6 +257,7 @@ textarea {
 
 .form-textarea {
     margin-top: 10px;
+    
 }
 
 .button {
@@ -270,7 +272,7 @@ input[type="submit"] {
     background-color: #09417c;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -395,7 +397,7 @@ input[type="submit"] {
 }
 .description h3 {
     margin-left: 30px;
-    font-size: 20px; /* Riduci la dimensione del testo */
+    font-size: 20px; /
 }
 
     .main-container{
@@ -407,41 +409,24 @@ input[type="submit"] {
     }
 
     .logo {
+
+            width: 12%;
+            display: flex;
+    
+            margin-top: 20px;
+        }
        
-        margin-top: 20px;
+        
     }
    
-    .menu {
-        display: none;
-    }
-
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        background-color: rgb(14, 13, 36);
-        z-index: 1;
-        align-items: flex-start;
-    }
-
-    .menu li {
-        text-align: left;
-        border-bottom: none;
-        padding: 10px;
-        margin: 10px;
-    }
-    .menu-icon{
-        padding: 20px;
-    }
+    
     .card-img-top{
         height: 300px;
     }
     
 
    
-}
+
 
 
 
