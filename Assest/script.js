@@ -5,19 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const menu = document.getElementById('menu');
     const menuItems = document.querySelectorAll('.menu li'); // Ottieni tutti gli elementi della lista
+    const menuIconOpen = document.getElementById('open-menu');
+    const menuIconClose = document.getElementById('close-menu');
 
+    // Mostra o nascondi il menu quando l'icona dell'hamburger viene cliccata
     menuIcon.addEventListener('click', () => {
         menu.classList.toggle('active');
+        menuIconOpen.style.display = menu.classList.contains('active') ? 'none' : 'block';
+        menuIconClose.style.display = menu.classList.contains('active') ? 'block' : 'none';
     });
 
-    // Aggiungi un gestore di eventi a ciascun elemento della lista per chiudere il menu quando viene cliccato
+    // Chiudi il menu quando un elemento del menu viene cliccato
     menuItems.forEach((item) => {
         item.addEventListener('click', () => {
             menu.classList.remove('active');
+            menuIconOpen.style.display = 'block';
+            menuIconClose.style.display = 'none';
         });
     });
 });
-
 
 
 

@@ -68,11 +68,19 @@ html, body {
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.hamb{
+.hamb {
     color: white;
     cursor: pointer;
     font-size: xx-large;
 }
+
+#close-menu {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
 
 
 /* _______________________ */
@@ -422,6 +430,14 @@ input[type="submit"] {
    
     .menu {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px; /* o qualsiasi altra altezza desiderata dal top */
+        left: 0;
+        background-color: rgb(14, 13, 36);
+        width: 100%;
+        z-index: 1;
+
         
     }
 
