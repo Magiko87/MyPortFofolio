@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
 });
+$(document).ready(function() {
+    $('.menu-icon').click(function() {
+        $('.menu').slideDown("slow");
+    });
+});
 
 
 

@@ -53,6 +53,7 @@ html, body {
     padding: 10px;
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+<<<<<<< HEAD
 } 
 .menu li {
     padding: 10px;
@@ -63,6 +64,53 @@ html, body {
 
 /* ___________________ */
  
+=======
+}
+/* ___________________ */
+ .menu {
+    list-style: none;
+    display: flex; 
+   
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    background-color: rgba(14, 13, 36,0.9);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 1.2s ease;
+    
+
+   
+} 
+
+.menu.active {
+    display: flex;
+    max-height: 500px;
+  
+}
+
+.menu li {
+    padding: 15px;
+    margin-top: -50px;
+    
+   
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+
+>>>>>>> 161a9a39e07da3e57eab8160f059651ab770e50a
 .hamb{
     color: white;
     cursor: pointer;
@@ -178,11 +226,6 @@ html, body {
     width: 800px;
   
 }
-
-.card-img-top{
-    height:200px;
-}
-
 
 
 
@@ -419,7 +462,37 @@ input[type="submit"] {
         
     }
    
+<<<<<<< HEAD
     
+=======
+    .menu {
+        display: none;
+        
+       
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: rgb(14, 13, 36);
+        z-index: 1;
+        align-items: flex-start;
+        
+    }
+
+    .menu li {
+        text-align: left;
+        border-bottom: none;
+        padding: 10px;
+        margin: 10px;
+    }
+    .menu-icon{
+        padding: 20px;
+    }
+>>>>>>> 161a9a39e07da3e57eab8160f059651ab770e50a
     .card-img-top{
         height: 300px;
     }
