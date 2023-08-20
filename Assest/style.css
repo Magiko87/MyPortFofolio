@@ -6,21 +6,6 @@ html, body {
 
 
 /*---> Home */
-.tit-w h1{
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    color: rgb(16, 70, 118);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size:35px;
-    margin-top: 80px;
-    margin-bottom: -40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Audiowide', cursive;
-
-}
-
 
 
 .main-container{
@@ -116,12 +101,35 @@ html, body {
 .photo {
     width: 150px; 
     height: 150px;
-    margin-top: 100px;
+    border-radius: 100%;
+    transform: translateY(450%);
+    animation: enterFromBottom 2s ease forwards;
+}
+.photo-cont{
+    transform: translateY(-250%);
+    animation: enterFromTop 2s ease forwards;
     border:solid 3px rgb(14, 13, 36);
     border-radius: 100%;
-
+}
+@keyframes enterFromTop {
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes enterFromBottom {
+    to {
+        transform: translateY(0);
+    }
+}
+/* Rallenta l'animazione "backInLeft" */
+.tit-w.animate__backInLeft {
+    animation-duration: 2s; 
 }
 
+/* Rallenta l'animazione "backInRight" */
+.title.animate__backInRight {
+    animation-duration: 4s; 
+}
  .title{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     color: rgb(25, 93, 152);
@@ -135,6 +143,22 @@ html, body {
    
 
 }
+.tit-w h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: rgb(16, 70, 118);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:35px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Audiowide', cursive;
+
+}
+
+
 /*---> About */
 .about{
     display: flex;

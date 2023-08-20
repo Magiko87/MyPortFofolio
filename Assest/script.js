@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const phrases = [
         'a Front End Developer',
         'a Web Designer',
-        'an Lifelong Learner'
+        'an App Developer '
     ];
 
     let currentPhraseIndex = 0;
