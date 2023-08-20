@@ -4,7 +4,25 @@ html, body {
 }
 
 
+
 /*---> Home */
+.tit-w h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: rgb(16, 70, 118);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:35px;
+    margin-top: 80px;
+    margin-bottom: -40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Audiowide', cursive;
+
+}
+
+
+
 .main-container{
     height: 100vh;
     
@@ -105,15 +123,16 @@ html, body {
 }
 
  .title{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     color: rgb(25, 93, 152);
     display:flex;
     margin-bottom:250px;
     justify-content: center;
-    margin-top:140px;
+    margin-top:40px;
     padding: 20px;
     white-space: nowrap;
     font-size: 25px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+   
 
 }
 /*---> About */
