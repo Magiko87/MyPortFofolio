@@ -278,6 +278,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
+    padding-bottom: 120px;
   
     
     width: 600px;
@@ -304,6 +305,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
 .custom-shadow{
   box-shadow: 0px 5px 20px rgba(14, 13, 36, 0.7); 
   border-radius: 50px;
+  
   
 }
 
