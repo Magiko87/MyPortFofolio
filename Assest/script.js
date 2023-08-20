@@ -111,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         element.classList.add('animate__animated', animationClass);
         element.style.visibility = 'visible';
     };
+    
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -121,7 +122,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     animateElement(projAnimat, 'animate__flip');
                 } else if (entry.target === titCont) {
                     animateElement(titCont, 'animate__flip');
+                    
+                }else {
+                    
+                    entry.target.classList.remove('animate__animated', 'animate__flip');
+                    entry.target.style.visibility = 'hidden';
                 }
+    
                 observer.unobserve(entry.target);
             }
         });
