@@ -5,7 +5,14 @@ html, body {
 }
 
 
+<<<<<<< HEAD
 /*---> Homee */
+=======
+
+/*---> Home */
+
+
+>>>>>>> mainb
 .main-container{
     height: 100vh;
     
@@ -20,16 +27,34 @@ html, body {
     height:100px;
 
 }   
+<<<<<<< HEAD
 .logo {
     width: 9%;
+=======
+.logo{
+    width: 100px;
+>>>>>>> mainb
     display: flex;
     align-items: center; /* Centra verticalmente il logo */
     margin-top: 15px;
+<<<<<<< HEAD
 }
 
 /* Stile per il menu */
 .menu-icon {
     display: block;
+=======
+    padding: 5px;
+   
+}
+.menu li a {  
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 600px;
+    font-size:18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+>>>>>>> mainb
 }
 
 .navbar {
@@ -53,6 +78,7 @@ html, body {
     width: 100%;
     background-color: rgb(14, 13, 36);
     z-index: 1;
+<<<<<<< HEAD
     flex-direction: row; /* Disponi le voci del menu in orizzontale */
     justify-content: space-around; /* Distribuisci uniformemente le voci del menu */
     align-items: center; /* Centra verticalmente le voci del menu */
@@ -68,6 +94,16 @@ html, body {
     z-index: 1;
     align-items: flex-start;
 
+=======
+    
+    
+   
+} 
+
+.menu.active {
+    display: flex;
+    
+>>>>>>> mainb
     
     
 }
@@ -79,7 +115,12 @@ html, body {
     
 }
 
+<<<<<<< HEAD
 .menu li a {
+=======
+.menu a {
+   
+>>>>>>> mainb
     text-decoration: none;
     color: white;
     padding: 10px 20px; /* Aggiungi spaziatura interna orizzontale */
@@ -88,14 +129,26 @@ html, body {
    
    
 }
+<<<<<<< HEAD
 
 /* ___________________ */
  
 .hamb{
+=======
+.hamb {
+>>>>>>> mainb
     color: white;
     cursor: pointer;
     font-size: xx-large;
 }
+
+#close-menu {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+}
+
 
 
 /* _______________________ */
@@ -109,43 +162,110 @@ html, body {
 .photo {
     width: 150px; 
     height: 150px;
-    margin-top: 100px;
+    border-radius: 100%;
+    transform: translateY(450%);
+    animation: enterFromBottom 2s ease forwards;
+}
+.photo-cont{
+    transform: translateY(-250%);
+    animation: enterFromTop 2s ease forwards;
     border:solid 3px rgb(14, 13, 36);
     border-radius: 100%;
-
+}
+@keyframes enterFromTop {
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes enterFromBottom {
+    to {
+        transform: translateY(0);
+    }
+}
+/* Rallenta l'animazione "backInLeft" */
+.tit-w.animate__backInLeft {
+    animation-duration: 2s; 
 }
 
+/* Rallenta l'animazione "backInRight" */
+.title.animate__backInRight {
+    animation-duration: 4s; 
+}
  .title{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     color: rgb(25, 93, 152);
-    font-size:50px;
     display:flex;
-    margin-bottom:50px;
+    margin-bottom:250px;
     justify-content: center;
-    margin-top:150px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
+    margin-top:40px;
+    padding: 20px;
+    white-space: nowrap;
+    font-size: 25px; 
+   
 
 }
+<<<<<<< HEAD
 /*---> About.. */
+=======
+.tit-w h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: rgb(16, 70, 118);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:35px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Audiowide', cursive;
+
+}
+
+
+/*---> About */
+>>>>>>> mainb
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+0,d8e1e7+50,b5c6d0+51,e0eff9+100;Grey+Gloss+%232 */
+background: rgb(242,246,248); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
+
 }
 .aboutTitle{
   color: rgb(25, 93, 152);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+<<<<<<< HEAD
   margin-bottom:-50px;
+=======
+  margin:60px;
+  
+>>>>>>> mainb
 }
     .description {
-        font-family: 'Arial Narrow Bold', sans-serif;
-        color: rgb(25, 93, 152);
-        padding: 20px;
-        max-width: 100%; /* Limita la larghezza massima */
-        margin: 0 auto; /* Centra l'elemento */
-        box-sizing: border-box; /* Evita che il padding e il bordo aumentino la larghezza */
-    }
     
+        color: rgb(25, 93, 152);
+        max-width: 100%;
+        margin: 0 auto; 
+        box-sizing: border-box; 
+
+    }
+    .description h3{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        padding-left: 120px;
+        padding-right: 120px;
+        font-weight: 500;
+        font-style: italic;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    }
 
 .skill{
     padding: 100px;
@@ -169,7 +289,10 @@ html, body {
     color: #fff;
     border: none;
     border-radius: 15px;
+<<<<<<< HEAD
     border-radius: 15px;
+=======
+>>>>>>> mainb
     cursor: pointer;
     margin-top: 120px;
     text-decoration: none;
@@ -183,26 +306,34 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding-top: -30px;
     color: rgb(25, 93, 152);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    
-   
-   
 }
+
+
+
+
 .card .btn-primary {
     padding: 10px 20px;
     background-color: #09417c;
     color: #fff;
     border-radius: 15px;
+<<<<<<< HEAD
     border-radius: 15px;
+=======
+>>>>>>> mainb
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
     width: 90px;
 }
 .container-card{
+<<<<<<< HEAD
     margin-top: -50px;
+=======
+    margin-top: -70px;
+>>>>>>> mainb
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +358,10 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding-top: 40px;
+    padding-bottom: 120px;
+  
+    
     width: 600px;
     color: rgb(25, 93, 152);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
@@ -238,23 +372,34 @@ html, body {
 }
 
 .contact-form {
-    margin-top:50px;
     max-width: 350px;
     height: 620px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
     border: 1px solid #ccc;
+<<<<<<< HEAD
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+=======
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+>>>>>>> mainb
     background-color: rgb(14, 13, 36); 
     color: white;
     
 }
 .custom-shadow{
+<<<<<<< HEAD
   box-shadow: 0px 5px 20px rgba(14, 13, 36, 0.7);  border-radius: 30px;
   border-radius: 30px;
+=======
+  box-shadow: 0px 5px 20px rgba(14, 13, 36, 0.7); 
+  border-radius: 50px;
+  
+  
+>>>>>>> mainb
 }
 
 .user-details {
@@ -306,6 +451,7 @@ input[type="submit"] {
     border-radius: 15px;
     border-radius: 15px;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .contact-links {
@@ -357,6 +503,9 @@ input[type="submit"] {
 
 
 }
+.container-card{
+    margin-top: 80px;
+}
 .card .btn-primary:hover{
     text-decoration: none;  
     background-color: #b3d2f3;
@@ -387,13 +536,20 @@ input[type="submit"] {
     
 /* MENU */
 .menu {
+<<<<<<< HEAD
     display: flex 
     
+=======
+    display: flex;
+>>>>>>> mainb
 }
 
 .menu-icon {
     display: none; 
+<<<<<<< HEAD
     
+=======
+>>>>>>> mainb
 }
 
 .btn-cv:hover{
@@ -405,10 +561,34 @@ input[type="submit"] {
     color:#09417c;
 
 }
+.description h3{
+    font-size: 25px;
+}
 
+.description {
+    
+  
+   margin-top: -50px;
+    padding-top: 100px;
+   
 
+}
 
-
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(25, 93, 152);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
+   
+   
+}
+.title{
+    font-size: 60px;
+}
 
 
 }
@@ -423,16 +603,14 @@ input[type="submit"] {
         width: 350px;
         margin: 30px;
     }
-.title{
-    font-size: 25px;
-}
+
 .description{
-    padding: 100px;
+    padding: 10px;
 
 }
 .description h3 {
-    margin-left: 30px;
-    font-size: 20px; /* Riduci la dimensione del testo */
+    margin: 10px;
+    font-size: 20px; 
 }
 
     .main-container{
@@ -451,16 +629,32 @@ input[type="submit"] {
    
    
         display: none;
+<<<<<<< HEAD
+=======
+        flex-direction: column;
+        position: absolute;
+        top: 100px; /* o qualsiasi altra altezza desiderata dal top */
+        left: 0;
+        background-color: rgb(14, 13, 36);
+        width: 100%;
+        z-index: 1;
+        
+
+>>>>>>> mainb
         
     }
 
     .menu.active {
+        background-color: rgba(14, 13, 36,0.9); 
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 100%;
         width: 100%;
+<<<<<<< HEAD
         background-color: rgba(14, 13, 36,0.8);
+=======
+>>>>>>> mainb
         z-index: 1;
         align-items: flex-start;
     }
