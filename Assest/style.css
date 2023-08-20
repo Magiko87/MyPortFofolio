@@ -227,6 +227,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
     margin-top: 120px;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+
 
 }
 
@@ -253,6 +255,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border: none;
     width: 90px;
+    font-weight: 700;
+
 }
 .container-card{
     margin-top: -70px;
@@ -351,6 +355,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 input[type="submit"] {
@@ -360,7 +365,8 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
+
 }
 
 .contact-links {
@@ -459,6 +465,7 @@ input[type="submit"] {
 .btn-cv:active{
     text-decoration: none; 
     color:#09417c;
+    
 
 }
 .description h3{
@@ -491,7 +498,7 @@ input[type="submit"] {
     
 }
 .aboutTitle{
-    margin-top: 100px;
+    margin-top: 180px;
     
 }
 
